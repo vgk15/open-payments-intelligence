@@ -68,8 +68,8 @@ python -m src.build --input /path/to/OP_DTL_GNRL_PGYR2023.csv
 - **Overview**: total value, recipient/manufacturer counts, spend concentration, spend by nature/specialty/state, monthly trends
 - **Risk & Compliance**: every recipient scored and ranked, with reason codes, filters by flag type, and CSV export
 - **Provider Detail**:  analyze HCP data: flags, payment mix, top payers, full transaction list
-- **Hospitals & Health Systems** — top organizations by payments received
-- **Competitive Landscape** — spend by manufacturer
+- **Hospitals & Health Systems**: top organizations by payments received
+- **Competitive Landscape**: spend by manufacturer
 
 ## Project layout
 
@@ -92,7 +92,7 @@ python -m src.build --input /path/to/OP_DTL_GNRL_PGYR2023.csv
 - This tool models the **General Payments** file. Open Payments also publishes separate
   **Research Payments** and **Ownership/Investment Interest** files; a production deployment
   would ingest all three (research dollars in particular should be assessed differently).
-- The Sunshine Act sets an annually indexed **de minimis** per-payment threshold (~$13–14) and an
+- The Sunshine Act sets an annually indexed per-payment threshold (~$13–14) and an
   aggregate annual threshold (~$130+); the round-dollar and meal-intensity signals are designed
   partly to surface patterns near those reporting boundaries.
 
