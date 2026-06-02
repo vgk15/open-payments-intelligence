@@ -1,18 +1,17 @@
 # Open Payments Intelligence Platform
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20App-FF4B4B?logo=streamlit&logoColor=white)](https://open-payments-intelligence-kuhwtwnk9mzt3gvkjl2taa.streamlit.app/)
 
-**[▶ Launch the live dashboard](https://open-payments-intelligence-kuhwtwnk9mzt3gvkjl2taa.streamlit.app/)**
+**[▶ Click here to launch dashboard](https://open-payments-intelligence-kuhwtwnk9mzt3gvkjl2taa.streamlit.app/)**
 
 **The problem:** Every year, drug and device manufacturers report billions of dollars in
 payments to physicians and teaching hospitals under the **Physician Payments Sunshine Act**,
 published in the public **CMS Open Payments** database. Buried in those millions of records are
-the relationships that matter to executives — both the commercial relationships that drive
+the relationships that matter to executives, including both the commercial relationships that drive
 brand performance and the anomalous ones that create anti-kickback and FCPA exposure. The data
 is too large and too raw for a leadership team to read directly.
 
-**What this project does:** It turns the raw Open Payments feed into a decision-ready executive
-dashboard with an **explainable compliance risk engine**. It does four things:
+**Project Outcomes:** Raw CMS Open Payments data is translated into a decision-ready executive
+dashboard with an **explainable compliance risk engine**, accomplishing 4 key tasks:
 
 1. Summarizes industry-wide spend by nature of payment, specialty, geography, manufacturer, and time.
 2. Scores every healthcare provider (HCP) 0–100 for compliance risk using interpretable signals — and states the reason for each flag.
