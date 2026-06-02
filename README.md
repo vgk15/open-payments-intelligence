@@ -22,18 +22,18 @@ It ships with a **synthetic dataset that uses the real CMS column names** (with 
 deliberately embedded), so it runs out of the box — and the same pipeline ingests a **real CMS
 General Payments download** unchanged.
 
-## The risk engine
+## Risk Engine
 
 Each provider gets a 0–100 score and is triaged into a **risk tier** (Critical / High /
 Moderate / Low / Minimal) — the way a compliance team actually prioritizes a review queue. The
 score is built from transparent signals, every one of which is shown to the user with its reason:
 
-| Signal | What it catches |
+| Signal | Documented Information |
 |---|---|
 | **Peer outlier** | Spend far above peers *in the same specialty* (robust z-score), with specialty percentile |
 | **High total** | Total payments in the top 1% of all recipients |
 | **Payer concentration** | One manufacturer is ≥80% of a recipient's money (kickback-risk pattern) |
-| **Speaker program** | Material speaker-program fees — the category named in the OIG's 2020 Special Fraud Alert |
+| **Speaker program** | Material speaker-program fees — identified in OIG's 2020 Special Fraud Alert |
 | **Round-dollar** | ≥70% of value in exact round-dollar payments (negotiated lump fees) |
 | **Meal intensity** | Unusually high number of food/beverage transactions (over-detailing) |
 | **Large single** | A single payment in the extreme tail |
@@ -41,7 +41,7 @@ score is built from transparent signals, every one of which is shown to the user
 | **Consulting-heavy** | Consulting/speaker/honoraria dominate at high absolute value |
 | **ML multivariate** | Isolation Forest catches odd *combinations* the rules miss |
 
-### Executive metrics
+### Executive Metrics
 
 Beyond the watchlist, the summary surfaces the numbers a CCO or commercial lead answers for:
 **value under review** (dollars tied to High/Critical providers), **high-scrutiny spend share**
