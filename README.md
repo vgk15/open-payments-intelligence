@@ -1,5 +1,9 @@
 # Open Payments Intelligence Platform
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20App-FF4B4B?logo=streamlit&logoColor=white)](https://open-payments-intelligence-kuhwtwnk9mzt3gvkjl2taa.streamlit.app/)
+
+**[▶ Launch the live dashboard](https://open-payments-intelligence-kuhwtwnk9mzt3gvkjl2taa.streamlit.app/)**
+
 **The problem:** Every year, drug and device manufacturers report billions of dollars in
 payments to physicians and teaching hospitals under the **Physician Payments Sunshine Act**,
 published in the public **CMS Open Payments** database. Buried in those millions of records are
