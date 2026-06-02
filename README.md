@@ -36,7 +36,7 @@ score is built from transparent signals, every one of which is shown to the user
 | **Large single** | A single payment in the extreme tail |
 | **YoY surge** | Sharp jump in spend versus the prior program year |
 | **Consulting-heavy** | Consulting/speaker/honoraria dominate at high absolute value |
-| **ML multivariate** | Isolation Forest catches odd *combinations* the rules miss |
+| **Isolation Forest** | Captures odd *combinations* the rules miss |
 
 ### Executive Metrics
 
@@ -71,30 +71,8 @@ python -m src.build --input /path/to/OP_DTL_GNRL_PGYR2023.csv
 - **Hospitals & Health Systems**: top organizations by payments received
 - **Competitive Landscape**: spend by manufacturer
 
-## Project layout
 
-| Path | Purpose |
-|------|---------|
-| `src/schema.py` | Mapping from real CMS column names (handles year-to-year drift) |
-| `src/generate_data.py` | Synthetic CMS-format data with embedded anomalies |
-| `src/load.py` | Loads & normalizes synthetic or real CMS files |
-| `src/analytics.py` | Recipient and dimensional spend analysis |
-| `src/anomalies.py` | Explainable risk scoring |
-| `src/build.py` | Orchestrates a pipeline that loads data, aggregates results, applies scoring, and persists outputs. |
-| `app.py` | Streamlit executive dashboard |
 
-## Notes for the reader
-
-- The demonstration data is synthetic; figures are illustrative, not real reported payments.
-- A flag is a **review signal, not a finding.** Open Payments captures many legitimate
-  high-value relationships (e.g., royalties to device inventors, bona fide research). The engine
-  prioritizes what a human should look at, with the reasoning made explicit.
-- This tool models the **General Payments** file. Open Payments also publishes separate
-  **Research Payments** and **Ownership/Investment Interest** files; a production deployment
-  would ingest all three (research dollars in particular should be assessed differently).
-- The Sunshine Act sets an annually indexed per-payment threshold (~$13–14) and an
-  aggregate annual threshold (~$130+); the round-dollar and meal-intensity signals are designed
-  partly to surface patterns near those reporting boundaries.
 
 ## Tech
 
