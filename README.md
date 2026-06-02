@@ -65,25 +65,25 @@ python -m src.build --input /path/to/OP_DTL_GNRL_PGYR2023.csv
 
 ## Dashboard
 
-- **Executive Summary** — total value, recipient/manufacturer counts, spend concentration, spend by nature/specialty/state, monthly trend.
-- **Compliance Watchlist** — every recipient scored and ranked, with reason codes, filters by flag type, and CSV export.
-- **HCP Explorer** — drill into one provider: why flagged, payment mix, top payers, full transaction list.
-- **Teaching Hospitals (HCOs)** — top organizations by payments received.
-- **Manufacturers & Competitive** — spend by manufacturer and where each one's money goes.
+- **Overview**: total value, recipient/manufacturer counts, spend concentration, spend by nature/specialty/state, monthly trends
+- **Risk & Compliance**: every recipient scored and ranked, with reason codes, filters by flag type, and CSV export
+- **Provider Detail**:  analyze HCP data: flags, payment mix, top payers, full transaction list
+- **Hospitals & Health Systems** — top organizations by payments received
+- **Competitive Landscape** — spend by manufacturer
 
 ## Project layout
 
 | Path | Purpose |
 |------|---------|
-| `src/schema.py` | Tidy schema + mapping from real CMS column names (handles year-to-year drift) |
+| `src/schema.py` | Mapping from real CMS column names (handles year-to-year drift) |
 | `src/generate_data.py` | Synthetic CMS-format data with embedded anomalies |
-| `src/load.py` | Loads & normalizes synthetic or real CMS files (chunked for large downloads) |
-| `src/analytics.py` | Recipient and dimensional spend rollups |
-| `src/anomalies.py` | Explainable risk scoring + Isolation Forest |
-| `src/build.py` | Orchestrates load → aggregate → score → persist |
+| `src/load.py` | Loads & normalizes synthetic or real CMS files |
+| `src/analytics.py` | Recipient and dimensional spend analysis |
+| `src/anomalies.py` | Explainable risk scoring |
+| `src/build.py` | Orchestrates a pipeline that loads data, aggregates results, applies scoring, and persists outputs. |
 | `app.py` | Streamlit executive dashboard |
 
-## Notes for the compliance reader
+## Notes for the reader
 
 - The demonstration data is synthetic; figures are illustrative, not real reported payments.
 - A flag is a **review signal, not a finding.** Open Payments captures many legitimate
