@@ -1,4 +1,4 @@
-# Open Payments Intelligence Platform
+# CMS Open Payments Intelligence Platform
 
 
 **[▶ Click here to launch dashboard](https://open-payments-intelligence-kuhwtwnk9mzt3gvkjl2taa.streamlit.app/)**
@@ -40,11 +40,7 @@ score is built from transparent signals, every one of which is shown to the user
 
 ### Executive Metrics
 
-Beyond the watchlist, the summary surfaces the numbers a CCO or commercial lead answers for:
-**value under review** (dollars tied to High/Critical providers), **high-scrutiny spend share**
-(consulting / speaker / honoraria / royalty), **spend concentration** (Gini coefficient and
-top-1% share), and **year-over-year** movement — wrapped in an auto-generated plain-English
-executive readout.
+In addition to flagged providers, the summary highlights the core metrics a CCO or commercial lead would typically review: total spend associated with HCPs, spend concentration, and year-over-year trends.
 
 ## Setup
 
