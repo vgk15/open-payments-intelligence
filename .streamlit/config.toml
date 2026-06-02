@@ -1,0 +1,12 @@
+# Pin a consistent, professional light theme so the dashboard renders the same
+# (and stays readable) regardless of the viewer's OS/browser dark-mode setting.
+[theme]
+base = "light"
+primaryColor = "#1F3A5F"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f3f6fb"
+textColor = "#15273d"
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false

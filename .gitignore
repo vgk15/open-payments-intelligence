@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated at runtime (the app rebuilds these on first launch)
+data/
+artifacts/
+
+# Local tooling / OS
+.claude/
+.DS_Store
