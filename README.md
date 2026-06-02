@@ -11,20 +11,17 @@ brand performance and the anomalous ones that create anti-kickback and FCPA expo
 is too large and too raw for a leadership team to read directly.
 
 **Project Outcomes:** Raw CMS Open Payments data is translated into a decision-ready executive
-dashboard with an **explainable compliance risk engine**, accomplishing 4 key tasks:
+dashboard with an **explainable compliance risk engine**, accomplishing 3 key tasks:
 
-1. Summarizes industry-wide spend by nature of payment, specialty, geography, manufacturer, and time.
-2. Scores every healthcare provider (HCP) 0–100 for compliance risk using interpretable signals — and states the reason for each flag.
-3. Lets compliance and commercial teams drill into any HCP, teaching hospital (HCO), or manufacturer.
-4. Doubles as competitive intelligence, since Open Payments covers every manufacturer, not just one company.
+1. Summarizes industry-wide spend by nature of payment, specialty, geography, manufacturer, and year.
+2. Scores every healthcare provider (HCP) 0 to 100 for compliance risk using interpretable signals and states the reason for each flag.
+3. Allows compliance and commercial teams to deep-dive into any HCP, teaching hospital, or manufacturer.
 
-It ships with a **synthetic dataset that uses the real CMS column names** (with anomalies
-deliberately embedded), so it runs out of the box — and the same pipeline ingests a **real CMS
-General Payments download** unchanged.
+The platform ships with a synthetic dataset modeled on the CMS General Payments data structure, including realistic, intentionally embedded anomalies. It operates immediately out of the box and can seamlessly ingest and analyze real CMS General Payments downloads using the same pipeline.
 
 ## Risk Engine
 
-Each provider gets a 0–100 score and is triaged into a **risk tier** (Critical / High /
+Each provider receives a 0–100 score and is triaged into a **risk tier** (Critical / High /
 Moderate / Low / Minimal) — the way a compliance team actually prioritizes a review queue. The
 score is built from transparent signals, every one of which is shown to the user with its reason:
 
